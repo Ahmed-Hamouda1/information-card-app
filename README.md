@@ -1,6 +1,6 @@
 # business_card_app
 
-A new Flutter project.
+First App in Flutter for Buginners (Tharwat samy).
 
 ## Getting Started
 
