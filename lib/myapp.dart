@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget
       debugShowCheckedModeBanner: false,
       home: Scaffold
       (
-        backgroundColor: Color(0xff274460),
+        backgroundColor:const Color(0xff274460),
         body: Center
         (
           child: Column
@@ -23,11 +23,11 @@ class MyApp extends StatelessWidget
             [
               const CircleAvatar
               (
-                radius: 130,
+                radius: 120,
                 backgroundColor: Colors.white,
                 child: CircleAvatar
                 (
-                  radius: 128,
+                  radius: 118,
                   backgroundImage: AssetImage("images/Ahmed.jpg"),
                 ),
               ),
@@ -54,10 +54,11 @@ class MyApp extends StatelessWidget
                         
                       ),
               ),
+              const Divider(height:50,color: Colors.red,indent: 50,endIndent: 50,thickness: 2,),
               Container
               (
-                margin: EdgeInsets.all(20),
-                padding: EdgeInsets.all(15),
+                margin:const EdgeInsets.all(20),
+                padding: const EdgeInsets.all(15),
                 decoration: BoxDecoration
                 (
                   color: Colors.white,
@@ -69,16 +70,19 @@ class MyApp extends StatelessWidget
                   children: 
                   [
                     Icon(Icons.phone,size: 30,),
-                    Spacer(flex: 1,),
-                    Text("01158202830",style: TextStyle(fontSize: 15),),
-                    Spacer(flex: 1,)
+                   
+                    Padding(
+                      padding: EdgeInsets.only(left: 20),
+                      child: Text("01158202830",style: TextStyle(fontSize: 15),),
+                    ),
+                    
                   ],
                 ),
               ),
               Container
               (
-                margin: EdgeInsets.all(20),
-                padding: EdgeInsets.all(15),
+                margin: const EdgeInsets.all(20),
+                padding: const EdgeInsets.all(15),
                 decoration: BoxDecoration
                 (
                   color: Colors.white,
@@ -90,10 +94,23 @@ class MyApp extends StatelessWidget
                   children: 
                   [
                     Icon(Icons.mail,size: 30,),
-                    Spacer(flex: 1,),
-                    Text("ahmedhamooda221@gmail.com",style: TextStyle(fontSize: 15),),
-                    Spacer(flex: 1,)
+                    Padding(
+                      padding: EdgeInsets.only(left: 20),
+                      child: Text("ahmedhamooda221@gmail.com",style: TextStyle(fontSize: 15),),
+                    ),
                   ],
+                ),
+              ),
+              const Card
+              (color: Colors.white,
+                margin: EdgeInsets.all(20),
+                
+                child: ListTile
+                (
+                  leading: Icon(Icons.facebook),
+                  title:Text("Ahmed Hamoda") ,
+                  
+
                 ),
               )
             ],
